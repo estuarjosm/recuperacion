@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">	
 	<link rel="stylesheet" type="text/css" href="../css/login.css">
-	<title>USUARIOS</title>
+	<title>BUSQUEDA USUARIOS</title>
 </head>
 <body>
 	<div class="container">
@@ -16,7 +16,7 @@
 				<svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 					<path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
 				</svg>
-				USUARIOS
+				BUSCAR USUARIOS
 			</a>
 			<form class="form-inline" action="PreBusquedaUsuario.php" method="post" autocomplete="off">
 				<div class="form-group">
@@ -30,18 +30,11 @@
 						</svg>
 						Buscar
 					</button>					
-				</div>
-				
-			</form>
-			<a class="btn btn-success" href="PreFormularioUsuario.php" role="boton">
-				<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-					<path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
-				</svg>
-				Nuevo Usuario
-			</a>			
+				</div>				
+			</form>						
 		</nav>
 		<br>
-		<a class="btn btn-outline-secondary" href="../index.php" role="boton">
+		<a class="btn btn-outline-secondary" href="PreUsuarios.php" role="boton">
 			<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 				<path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
 				<path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
@@ -49,9 +42,9 @@
 			Regresar
 		</a>
 		<br>
-		<h2 class="text-center">USUARIOS REGISTRADOS</h2>
+		<h2 class="text-center">RESULTADO DE LA BUSQUEDA</h2>
 		<br>
-		<?php require "../capa_entidad/EntMostrarUsuario.php";
+		<?php require "../capa_entidad/EntBuscarUsuario.php";
 		?>
 
 	</div>

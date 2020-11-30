@@ -2,7 +2,7 @@
 
 function tabla($titulos,$datos)
 {
-	echo '<table class="table">';
+	echo '<table class="table table-striped">';
 	
 	echo $titulos;
 
